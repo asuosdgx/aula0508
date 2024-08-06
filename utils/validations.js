@@ -14,7 +14,7 @@ export const contatoValidation = Joi.object({
 
 export const usuarioValidation = Joi.object({
     nome: Joi.string().required(),
-    email: Joi.string().email(),
+    email: Joi.string().email().required,
     senha: Joi.string().min(8).max(20).required()
 })
 

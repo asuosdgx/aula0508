@@ -1,3 +1,4 @@
+import { required } from "joi";
 import { model, Schema } from "mongoose";
 
 
@@ -8,7 +9,8 @@ export const Usuario = model("usuario", new Schema({
     },
     email: {
         type: String,
-        unique: true
+        unique: true, 
+        required: true
     },
     senha:{
         type: String,

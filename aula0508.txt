@@ -1,0 +1,7 @@
+mongoose- 
+atlas
+nmp init-y 
+npm install express dotenv mongoose joi
+npm install -D nodemon
+"type": "module",
+"dev": "nodemon ./index.js"
